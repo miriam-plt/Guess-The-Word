@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+    background-color: #F9F9F9;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.timer-container {
+    height: 5px;
+}
+
+.timer {
+    height: 100%;
+    background-color: red;
+}
+
+.score-container {
+    margin-top: 1em;
+    display: inline-block;
+    float: left;
+}
+
+.score {
+    font-size: 1em;
+}
+
+.title {
+    margin: .5em 0;
+    text-align: center;
+    font-size: 2em;
+    color: #4a4a4a;
+}
+
+.subtitle {
+    margin-bottom: 2em;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: .75em;
+}
+
+.start {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #EC6F86;
+    box-shadow: 0 0 5px 5px lighten(#EC6F86, 10%);
+    font-size: 2em;
+    color: #F9F9F9;
+    border: 0;
+    cursor: pointer;
+    animation: glow 1s infinite;
+}
+
+.word {
+    font-size: 4em;
+    text-align: center;
+}
+
+.options-container {
+    margin: 3em 0;
+}
+
+li {
+    margin-bottom: .5em;
+    text-align: center;
+    list-style-type: none;
+}
+
+button {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    color: #8A8A8A;
+    cursor: pointer;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0 0 10px 10px lighten(#EC6F86, 10%);
+    }
+}

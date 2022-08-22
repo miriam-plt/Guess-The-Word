@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+</head>
+<body>
+    <div class="timer-container">
+        <div id="timer" class="timer"></div>
+    </div>
+    <div class="score-container wrap clearfix">
+        <p>Score: <span id="score" class="score"></span></p>
+    </div>
+    <div class="wrap">
+        <h1 class="title">Name that color!</h1>
+        <p class="subtitle">Click the color</p>
+        <button class="start" id="start">START GAME</button>
+        <p class="word" id="word"></p>
+        <ul id="options">
+            <li>RED</li>
+            <li>YELLOW</li>
+            <li>GREEN</li>
+            <li>BLUE</li>
+        </ul>
+        <div id="gameover-container" class="modal-container">
+            <div class="modal">
+                <p>Game over!</p>
+                <button id="restart">Try again</button>
+            </div>
+        </div>
+    </div> 
+    <script src="./game.js"></script>
+</body>
+</html>
