@@ -4,48 +4,99 @@ const wordList = [
         hint: "Your parents were right."
     },
     {
-        word: "depression",
+        word: "inappropriate-humor",
         hint: ""
     },
     {
         word: "student-debt",
-        hint: "You'll never paid it off."
+        hint: "You'll never pay it off."
     },
     {
         word: "unpaid-internships",
-        hint: "But hey it's an amazing experience!"
+        hint: "Hey it will look great on your CV!"
     },
     {
         word: "deleuze-quotes",
-        hint: "You just pretend to undertand."
+        hint: "You never understood the rhizome but it's in all your exhibition texts."
     },
     {
-        word: "failure"
+        word: "failure",
+        hint: "On the positive side, it's Beckettian."
     },
     {
-        word: "exploitation"
+        word: "exploitation",
+        hint: "There's no budget but you'll get exposure."
     },
     {
-        word: "memes"
+        word: "memes",
+        hint: "Post-internet art is dead but let's have some digital folklore."
     },
     {
-        word: "unrelated-jobs"
+        word: "unrelated-jobs",
+        hint: ""
     },
     {
-        word: "alcoholism"
+        word: "alcoholism",
+        hint: "I blame the free drinks at vernissages."
     },
     {
-        word: "unsold-nfts"
+        word: "unsold-nfts",
+        hint: "Post-internet art is dead."
     },
     {
-        word: "precarity"
+        word: "precarity",
+        hint: ""
     },
     {
-        word: "mental-health-issues"
+        word: "substance-abuse",
+        hint: ""
     },
     {
-        word: "overwork"
+        word: "burn-out",
+        hint: "What you get when you're your own curator, press and marketing team, technician, studio manager, art handler, social media manager, web designer, archivist and photographer all at once."
     },
     {
-        word: "rejections"
-    }]
+        word: "rejections",
+        hint: "What you get for applying for funding."
+    },
+    {
+        word: "creative-block",
+        hint: ""
+    },
+    {
+        word: "unfinished-projects",
+        hint: ""
+    },
+    {
+        word: "deadlines",
+        hint: ""
+    },
+    {
+        word: "procrastination",
+        hint: ""
+    },
+    {
+        word: "suffering",
+        hint: ""
+    },
+    {
+        word: "toxic-competition",
+        hint: ""
+    },
+    {
+        word: "online-residencies",
+        hint: ""
+    },
+    {
+        word: "instagram-takeovers",
+        hint: ""
+    },
+    {
+        word: "mediocre-group-shows",
+        hint: ""
+    },
+    {
+        word: "imposter-syndrome",
+        hint: ""
+    }
+]
