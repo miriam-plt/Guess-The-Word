@@ -5,7 +5,7 @@ const wordList = [
     },
     {
         word: "inappropriate-humor",
-        hint: ""
+        hint: "I made this game thinking it was funny."
     },
     {
         word: "student-debt",
@@ -33,7 +33,7 @@ const wordList = [
     },
     {
         word: "unrelated-jobs",
-        hint: ""
+        hint: "How to pay the bills."
     },
     {
         word: "alcoholism",
@@ -65,14 +65,6 @@ const wordList = [
     },
     {
         word: "unfinished-projects",
-        hint: ""
-    },
-    {
-        word: "deadlines",
-        hint: ""
-    },
-    {
-        word: "procrastination",
         hint: ""
     },
     {

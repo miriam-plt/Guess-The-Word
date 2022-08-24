@@ -3,6 +3,9 @@ const guessLeft = document.querySelector('.guess-left span');
 const wrongLetter = document.querySelector('.wrong-letter span');
 const resetBtn = document.querySelector('.reset-btn');
 const typingInput = document.querySelector('.typing-input');
+const popupBtn = document.querySelector('.popup-btn');
+const closeBtn = document.querySelector('.close-btn');
+const hintPop = document.querySelector('.popup h2');
 
 let word;
 let incorrectLetters = [];
@@ -10,18 +13,33 @@ let correctLetters= [];
 let maxGuesses = [];
 
 
+
+
 // function to get a random word
 function randomWord() {
   let random = wordList[Math.floor(Math.random() * wordList.length)]; // <- to get a random object
   word = random.word; // <- to get a word from the object
+  hint = random.hint;
   // word = word.replace(/\s/g, "-"); // to get spaces when multiple words
-  maxGuesses = 8; // change the limited amount of guesses depending on word length!!
+  // change the limited amount of guesses depending on word length
+  if (word.length <= 7) {
+    maxGuesses = 6;
+  } else if (word.length <= 10) {
+    maxGuesses = 8;
+  } else if ((word.length > 10) && (word.length <= 14)) {
+    maxGuesses = 10
+  } else if ((word.length > 14)) {
+    maxGuesses = 12
+  }
+  hintPop.innerText = hint;
+  
   incorrectLetters = []; 
   correctLetters= [];
-
+  
   guessLeft.innerHTML = maxGuesses;
   wrongLetter.innerText = incorrectLetters;
   
+  // function to print the letters'/spaces' square
   let htmlWord = '';
   for (let i = 0; i < word.length; i++) {
       if (word[i] === '-') {
@@ -33,13 +51,14 @@ function randomWord() {
     }
   inputs.innerHTML = htmlWord;   
   console.log(word)
+  console.log(hint)
   console.log(htmlWord)
 }
 
-randomWord(); // change this with a start button that returns this function?
+randomWord(); // starts the game when you load the page
 
 
-
+// function to play typing letters
 function play(letter) {
   let key = letter.target.value;
   // to allow typing only letters && check if the wrong&right letter was already typed 
@@ -58,9 +77,10 @@ function play(letter) {
     }
   }
   guessLeft.innerHTML = maxGuesses;
-  wrongLetter.innerText = incorrectLetters; //
+  wrongLetter.innerText = incorrectLetters; 
   typingInput.value = ''; // to clear the input after typing
 
+  // winning and losing options
   if (correctLetters.length === word.length -1) {
     console.log("YOU WON")
   } else if (maxGuesses < 1){
@@ -70,19 +90,31 @@ function play(letter) {
   }
 }
 
+// hint button that returns a pop-up message
+let pop = document.querySelector('.popup');
+function openPopup() {
+  pop.classList.add('open-popup');
+}
+
+function closePopup() {
+  pop.classList.remove('open-popup');
+}
+
 // the reset button gets a new word
 resetBtn.addEventListener('click', randomWord);
 // the input activate the game function
 typingInput.addEventListener('input', play);
 // the input gets the letter typed
 document.addEventListener('keydown', () => typingInput.focus());
+// hint button that returns a pop-up message
+popupBtn.addEventListener('click', openPopup);
+closeBtn.addEventListener('click', closePopup);
 
 
 
 
 // TO-DO
-// hint button that returns a pop-up message
-// start button
+
 // winning game - with gif
 // losing game - with gif 
 
