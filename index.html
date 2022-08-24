@@ -15,8 +15,20 @@
           <div class="inputs"></div>
           <div class="details">
             <button class="popup-btn">Click for a hint</button>
-            <div class="popup" id="popup"><h2></h2>
-            <button class="close-btn">X</button></div>
+            <div class="popup" id="popup">
+              <h2></h2>
+            <button class="close-btn" id="btn">X</button>
+            </div>
+            <div class="popup-lose" id="popup">
+              <h2>GAME OVER</h2>
+              <img class="gif" src="img/marina.gif">
+              <button class="lose-close-btn" id="btn">X</button>
+            </div>
+              <div class="popup-win" id="popup">
+                <h2>YOU WON</h2>
+                <img class="gif" src="img/michael.gif">
+                <button class="win-close-btn" id="btn">X</button>
+            </div>
             <p class="guess-left">Remaining guesses: <span></span></p>
             <p class="wrong-letter">Wrong letters: <span></span></p>
           </div>
