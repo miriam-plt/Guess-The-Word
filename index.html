@@ -10,17 +10,18 @@
 <body>
     <div class="wrapper">
         <h1>What does an art degree bring you?</h1>
+        <h5>Type a letter to guess</h5>
         <div class="content">
           <input type="text" class="typing-input" maxlength="1">
           <div class="inputs"></div>
           <div class="details">
-            <button class="popup-btn">Click for a hint</button>
+            <button class="popup-btn">CLICK<br>FOR A<br>HINT</button>
             <div class="popup" id="popup">
-              <h2></h2>
+              <h3></h3>
             <button class="close-btn" id="btn">X</button>
             </div>
             <div class="popup-lose" id="popup">
-              <h2>GAME OVER</h2>
+              <h2>YOU BLEW IT</h2>
               <img class="gif" src="img/marina.gif">
               <button class="lose-close-btn" id="btn">X</button>
             </div>
@@ -32,9 +33,12 @@
             <p class="guess-left">Remaining guesses: <span></span></p>
             <p class="wrong-letter">Wrong letters: <span></span></p>
           </div>
-          <button class="reset-btn">Try again</button>
+          <button class="reset-btn">TRY AGAIN</button>
         </div>
+        <div class="footer"><h6>This game has an ironic intent, we can make the art world better together.</h6></div>
       </div>
+      
+      
     <script src="./words.js"></script>
     <script src="./game.js"></script>
 </body>

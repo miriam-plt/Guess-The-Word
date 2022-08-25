@@ -5,7 +5,7 @@ const wordList = [
     },
     {
         word: "inappropriate humor",
-        hint: "I made this game thinking it was funny."
+        hint: "I made this game thinking it was fun."
     },
     {
         word: "student debt",
@@ -33,7 +33,7 @@ const wordList = [
     },
     {
         word: "unrelated jobs",
-        hint: "How to pay the bills."
+        hint: "Something that does pay the bills."
     },
     {
         word: "alcoholism",
@@ -45,11 +45,11 @@ const wordList = [
     },
     {
         word: "precarity",
-        hint: "Hint here"
+        hint: "Security is a concept you are unfamiliar with."
     },
     {
         word: "substance abuse",
-        hint: "Hint here"
+        hint: "Either with or without a prescription."
     },
     {
         word: "burn out",
@@ -57,38 +57,30 @@ const wordList = [
     },
     {
         word: "rejections",
-        hint: "What you get for applying for funding."
-    },
-    {
-        word: "creative block",
-        hint: "Hint here"
+        hint: "What you get when applying for funding."
     },
     {
         word: "unfinished projects",
-        hint: "Hint here"
-    },
-    {
-        word: "suffering",
-        hint: "Hint here"
+        hint: "You have a full folder on your desktop."
     },
     {
         word: "toxic competition",
-        hint: "Hint here"
+        hint: "When your friend get in the residency program you apply to."
     },
     {
         word: "online residencies",
-        hint: "Hint here"
+        hint: "One has to travel with imagination."
     },
     {
         word: "instagram takeovers",
-        hint: "Hint here"
-    },
-    {
-        word: "mediocre group shows",
-        hint: "Hint here"
+        hint: "This is for influencers. Why are you even doing it?"
     },
     {
         word: "imposter syndrome",
-        hint: "Hint here"
+        hint: "That uncomfortable feeling of worthlessness."
+    },
+    {
+        word: "unnecessary readings",
+        hint: "Infinite Jest is useful as a door stopper."
     }
 ]

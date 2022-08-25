@@ -15,17 +15,24 @@ body{
   background: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg');
 }
 .wrapper{
-  width: 430px;
+  width: 630px;
   background: transparent;
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 .wrapper h1{
+  color: #494f59;
   font-size: 20px;
   font-weight: 500;
   padding: 20px 25px;
-  border-bottom: 1px solid #ccc;
 }
+.wrapper h5 {
+  color: #494f59;
+  font-size: x-small;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
 .wrapper .content{
   margin: 25px 25px 35px;
 }
@@ -37,25 +44,25 @@ body{
 .inputs input{
     height: 50px;
     width: 50px;
-    margin: 3px;
+    margin: 2px;
     font-size: 24px;
     font-weight: 500;
-    color: black;
+    color: #494f59;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 15px;
     background: none;
     pointer-events: none;
     text-transform: uppercase;
     border: 1px solid #B5B5B5;
   }
-/*
+
 .typing-input {
     opacity: 0;
     z-index: -999;
     position: absolute;
     pointer-events: none;
   }
-  */
+  
 .inputs input:first-child{
   margin-left: 0px;
 }
@@ -74,23 +81,52 @@ body{
   outline: none;
   padding: 10px 0;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 25px;
   background: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg');
   transition: all 0.3s ease;
 }
 .content .reset-btn:hover{
   background: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg');
 }
+.content .popup-btn{
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  color: #494f59;
+  outline: none;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  font-size: 10.5px;
+  border-radius: 15px;
+  background: rgb(207,224,240);
+  background: linear-gradient(90deg, rgba(207,224,240,1) 0%, rgba(207,224,240,1) 10%, rgba(207,224,240,1) 100%);
+  transition: all 0.3s ease;
+}
 
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #494f59;
+}
 
+.guess-left{
+  color: #494f59;
+}
+
+.wrong-letter {
+  color: #494f59;
+}
 
 
 /* Popup container */
 .popup {
   position: absolute;
   width: 300px;
-  background: #fff;
-  border-radius: 6px;
+  background: #fad5e4;
+  border-radius: 10px;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
@@ -102,8 +138,8 @@ body{
 .popup-lose {
   position: absolute;
   width: 300px;
-  background: #fff;
-  border-radius: 6px;
+  background: #fad5e4;
+  border-radius: 10px;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
@@ -129,7 +165,6 @@ body{
 h2 {
   padding-top: 5px;
   padding-bottom: 3px;
-
 }
 
 .gif {
@@ -139,7 +174,7 @@ h2 {
 }
 
 #btn {
-  background-color: black;
+  background-color: #494f59;
   border: none;
   color: white;
   padding: 5px 7.5px;
@@ -157,3 +192,16 @@ h2 {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
+
+
+h6 {
+  font-size: 5px;
+  color: #494f59;
+  text-align: center;
+  display: flex;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
