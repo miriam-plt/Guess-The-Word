@@ -34,7 +34,7 @@ body{
 }
 
 .wrapper .content{
-  margin: 25px 25px 35px;
+  margin: 5px 25px 35px;
 }
 .content .inputs{
   display: flex;
@@ -46,32 +46,44 @@ body{
     width: 50px;
     margin: 2px;
     font-size: 24px;
-    font-weight: 500;
     color: #494f59;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 45px;
     background: none;
     pointer-events: none;
     text-transform: uppercase;
     border: 1px solid #B5B5B5;
   }
 
-.typing-input {
-    opacity: 0;
-    z-index: -999;
-    position: absolute;
-    pointer-events: none;
-  }
+ .typing-input {
+  position: relative;
+  margin-bottom: 40px;
+  border: none;
+  appearance: none;
+  background: #B5B5B5;
+  padding: 10px;
+  border-radius: 30px;
+  outline: none;
+  width: 150px;
+  font-size: 10px;
+ } 
+
+ input:focus::placeholder {
+  color: transparent;
+ }
+
+ input::placeholder {
+  color: #494f59;
+  transition: color 0.3s ease;
+ } 
   
-.inputs input:first-child{
-  margin-left: 0px;
-}
+
 .content .details{
   margin: 20px 0 25px;
 }
 .details p{
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 11px;
+  margin-bottom: 4px;
 }
 .content .reset-btn{
   width: 100%;
@@ -84,11 +96,12 @@ body{
   border-radius: 25px;
   background: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg');
   transition: all 0.3s ease;
+  box-shadow: 0 7px 5px rgba(0,0,0,0.1);
 }
 .content .reset-btn:hover{
   background: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg');
 }
-.content .popup-btn{
+ .popup-btn{
   height: 50px;
   width: 50px;
   border: none;
@@ -96,13 +109,15 @@ body{
   color: #494f59;
   outline: none;
   padding: 5px 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 10.5px;
-  border-radius: 15px;
-  background: rgb(207,224,240);
+  border-radius: 45px;
   background: linear-gradient(90deg, rgba(207,224,240,1) 0%, rgba(207,224,240,1) 10%, rgba(207,224,240,1) 100%);
   transition: all 0.3s ease;
+  box-shadow: 0 7px 5px rgba(0,0,0,0.1);
+  position: relative;
 }
+
 
 h3 {
   margin-top: 15px;
@@ -180,11 +195,11 @@ h2 {
   padding: 5px 7.5px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 10px;
   margin: 4px 2px;
   border-radius: 50%;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .open-popup {

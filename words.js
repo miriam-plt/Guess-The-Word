@@ -82,5 +82,9 @@ const wordList = [
     {
         word: "unnecessary readings",
         hint: "Infinite Jest is useful as a door stopper."
+    },
+    {
+        word: "submission fees",
+        hint: "Why getting paid for your work when you can pay for applications?"
     }
 ]

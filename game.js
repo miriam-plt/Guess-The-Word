@@ -21,9 +21,9 @@ let maxGuesses = [];
 
 // function to get a random word
 function randomWord() {
-  let random = wordList[Math.floor(Math.random() * wordList.length)]; // <- to get a random object
-  word = random.word; // <- to get a word from the object
-  hint = random.hint; // <- to get the related hint
+  let random = wordList[Math.floor(Math.random() * wordList.length)]; // gets a random object
+  word = random.word; // gets a word from the object
+  hint = random.hint; // gets the related hint
   
   // change the limited amount of guesses depending on word length
   if (word.length <= 7) {
@@ -41,19 +41,19 @@ function randomWord() {
   incorrectLetters = []; 
   correctLetters = [];
   
-  guessLeft.innerHTML = maxGuesses; // <- this shows the amount of guesses left
-  wrongLetter.innerText = incorrectLetters; // <- this shows the wrong letters typed
+  guessLeft.innerHTML = maxGuesses; // shows the amount of guesses left
+  wrongLetter.innerText = incorrectLetters; // shows the wrong letters typed
   
   // function to print the letters square
   let htmlWord = '';
   for (let i = 0; i < word.length; i++) {
       if (word[i] === ' ') {
-       htmlWord += '<input type="text" style="background-color:#B5B5B5;">' // <- if there's a space the square is colored
+       htmlWord += '<input type="text" style="background-color:#B5B5B5;">' // if there's a space the square is colored
       } else if (word[i] !== ' ') {
         htmlWord += '<input type="text">'; // if not the square is empty
       }  
     }
-  inputs.innerHTML = htmlWord; // <- this shows the letters' space
+  inputs.innerHTML = htmlWord; 
   console.log(word)
   console.log(hint)
 }
