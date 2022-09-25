@@ -16,7 +16,7 @@ Irony can function as a tool for sense-making, and as a way of handling multiple
 
 ## Links
 
-- [Repo](https://miriam-plt.github.io/Guess-The-Word/ "Guess The Word Repo")
+- [Play Guess the Word (Art Edu Edition)](https://miriam-plt.github.io/Guess-The-Word/ "Guess The Word Repo")
 
 ## How to play
 
